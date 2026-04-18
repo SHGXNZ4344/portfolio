@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const NAME = "Your Name";
-const TAGLINE = "Motion Developer · AI/ML Enthusiast";
+const NAME = "Shubham Rohilla";
+const TAGLINE = "Software Engineer · AI/ML Specialist";
 const INTRO =
-  "I craft fluid, glass-like web experiences where animation meets intelligence. Currently exploring the edge of motion design and applied AI.";
+  "I build scalable web apps and AI-driven systems — from automation workflows to ML-powered interfaces. Currently pursuing B.E. in CSE (AI & ML) at Chandigarh University.";
 
 const container = {
   hidden: {},
@@ -30,7 +30,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-muted-foreground"
         >
           <Sparkles className="h-3.5 w-3.5 text-primary" />
-          Available for new work
+          Open to opportunities
         </motion.span>
 
         <motion.h1

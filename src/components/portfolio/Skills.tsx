@@ -2,35 +2,34 @@ import { motion } from "framer-motion";
 
 const GROUPS: { name: string; items: { label: string; level: number }[] }[] = [
   {
-    name: "Frontend",
+    name: "Programming",
     items: [
-      { label: "React", level: 92 },
-      { label: "TypeScript", level: 85 },
-      { label: "Tailwind", level: 90 },
-    ],
-  },
-  {
-    name: "Animation",
-    items: [
-      { label: "Framer Motion", level: 88 },
-      { label: "GSAP", level: 70 },
-      { label: "CSS Motion", level: 82 },
+      { label: "Python", level: 90 },
+      { label: "SQL", level: 82 },
     ],
   },
   {
     name: "AI / ML",
     items: [
-      { label: "Python", level: 80 },
-      { label: "PyTorch", level: 65 },
-      { label: "LLM APIs", level: 78 },
+      { label: "PyTorch", level: 80 },
+      { label: "TensorFlow", level: 75 },
+      { label: "Generative AI", level: 82 },
+      { label: "AI Automation", level: 85 },
     ],
   },
   {
-    name: "Tools",
+    name: "Web Development",
     items: [
-      { label: "Git", level: 88 },
-      { label: "Figma", level: 75 },
-      { label: "Vite", level: 85 },
+      { label: "Frontend Development", level: 85 },
+      { label: "Responsive UI Design", level: 88 },
+    ],
+  },
+  {
+    name: "Cloud, Systems & Tools",
+    items: [
+      { label: "Cloud Computing", level: 72 },
+      { label: "Networking Fundamentals", level: 70 },
+      { label: "Git / Version Control", level: 88 },
     ],
   },
 ];

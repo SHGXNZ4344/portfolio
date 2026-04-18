@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-const INITIALS = "YN";
+const INITIALS = "SR";
 const BIO_1 =
-  "I'm a developer who lives at the intersection of motion design and machine intelligence. I build interfaces that feel alive — not loud, just considered.";
+  "I'm Shubham — a Software Engineer specializing in Artificial Intelligence and Machine Learning. I enjoy turning real-world problems into efficient technical implementations, from AI automation workflows to scalable web apps.";
 const BIO_2 =
-  "When I'm not shipping side projects, I'm reading papers, prototyping micro-interactions, or learning a new tool. Always curious, always iterating.";
+  "Currently pursuing a Bachelor of Engineering in CSE (AI & ML Specialization) at Chandigarh University. Actively exploring advancements in generative AI, cloud systems, and intelligent automation.";
 
 export function About() {
   return (
