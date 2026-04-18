@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 const LINKS = [
   { href: "#work", label: "Work" },
   { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -34,9 +35,9 @@ export function Navbar() {
       >
         <a href="#top" className="flex items-center gap-2">
           <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-to-br from-primary to-accent text-sm font-bold text-primary-foreground">
-            YN
+            SR
           </span>
-          <span className="hidden text-sm font-semibold tracking-wide sm:inline">your.dev</span>
+          <span className="hidden text-sm font-semibold tracking-wide sm:inline">shubham.dev</span>
         </a>
         <ul className="flex items-center gap-1">
           {LINKS.map((l) => (

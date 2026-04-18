@@ -4,25 +4,28 @@ import { Button } from "@/components/ui/button";
 
 const PROJECTS = [
   {
-    title: "Project One",
-    description: "Interactive motion playground built with React and Framer Motion.",
-    tech: ["React", "Framer Motion", "Tailwind"],
+    title: "AI-Powered Traffic Flow Optimization",
+    description:
+      "Digital-twin based system that simulates real-world traffic and uses ML to predict congestion and improve flow.",
+    tech: ["Python", "PyTorch", "Digital Twins", "Data Pipeline"],
     demo: "#",
     repo: "#",
     accent: "from-primary/40 to-accent/30",
   },
   {
-    title: "Project Two",
-    description: "AI-assisted creative tool that turns prompts into animated scenes.",
-    tech: ["Next.js", "OpenAI", "TypeScript"],
+    title: "Portfolio Website",
+    description:
+      "Personal portfolio showcasing technical projects with a structured UI, live previews, and repo integration.",
+    tech: ["React", "Framer Motion", "Tailwind"],
     demo: "#",
     repo: "#",
     accent: "from-accent/40 to-primary/30",
   },
   {
-    title: "Project Three",
-    description: "ML model dashboard with real-time charts and gesture controls.",
-    tech: ["Python", "FastAPI", "WebGL"],
+    title: "Task Tracker Application",
+    description:
+      "Task management system supporting creation, tracking, and prioritization, backed by SQL for efficient data handling.",
+    tech: ["Python", "SQL", "Frontend"],
     demo: "#",
     repo: "#",
     accent: "from-primary/30 to-accent/40",

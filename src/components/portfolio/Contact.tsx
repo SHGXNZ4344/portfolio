@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Copy, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Copy, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 
-const EMAIL = "hello@your-domain.dev";
+const EMAIL = "rohillashubhamanil@gmail.com";
+const PHONE = "+91-8397849864";
 const SOCIALS = [
-  { label: "GitHub", href: "#", Icon: Github },
+  { label: "GitHub", href: "https://github.com/", Icon: Github },
   { label: "LinkedIn", href: "#", Icon: Linkedin },
-  { label: "X", href: "#", Icon: Twitter },
 ];
 
 export function Contact() {
@@ -53,6 +53,13 @@ export function Contact() {
               <Copy /> Copy email
             </Button>
           </div>
+
+          <a
+            href={`tel:${PHONE.replace(/[^+\d]/g, "")}`}
+            className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <Phone className="h-4 w-4" /> {PHONE}
+          </a>
 
           <div className="mt-8 flex items-center justify-center gap-2">
             {SOCIALS.map(({ label, href, Icon }) => (
