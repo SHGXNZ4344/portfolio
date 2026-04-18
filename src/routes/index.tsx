@@ -5,6 +5,7 @@ import { Hero } from "@/components/portfolio/Hero";
 import { Projects } from "@/components/portfolio/Projects";
 import { Skills } from "@/components/portfolio/Skills";
 import { About } from "@/components/portfolio/About";
+import { Experience } from "@/components/portfolio/Experience";
 import { WorkInProgress } from "@/components/portfolio/WorkInProgress";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
@@ -13,16 +14,16 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Your Name — Motion Developer & AI/ML Enthusiast" },
+      { title: "Shubham Rohilla — Software Engineer · AI/ML Specialist" },
       {
         name: "description",
         content:
-          "Portfolio of Your Name — a motion developer and AI/ML enthusiast crafting fluid, glass-like web experiences with React and Framer Motion.",
+          "Portfolio of Shubham Rohilla — Software Engineer specializing in AI/ML, building scalable web apps, AI automation workflows, and ML-powered systems.",
       },
-      { property: "og:title", content: "Your Name — Motion Developer & AI/ML Enthusiast" },
+      { property: "og:title", content: "Shubham Rohilla — Software Engineer · AI/ML Specialist" },
       {
         property: "og:description",
-        content: "Selected work in motion design, interactive UI, and applied AI.",
+        content: "Projects in AI/ML, automation, and frontend engineering by Shubham Rohilla.",
       },
     ],
   }),
@@ -36,6 +37,7 @@ function Index() {
       <Hero />
       <Projects />
       <Skills />
+      <Experience />
       <About />
       <WorkInProgress />
       <Contact />
