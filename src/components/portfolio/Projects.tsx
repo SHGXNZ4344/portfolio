@@ -8,8 +8,8 @@ const PROJECTS = [
     description:
       "Digital-twin based system that simulates real-world traffic and uses ML to predict congestion and improve flow.",
     tech: ["Python", "PyTorch", "Digital Twins", "Data Pipeline"],
-    demo: "https://github.com/SHGXNZ4344/v0-ai-traffic-optimization",
-    repo: "#",
+    demo: "https://v0-ai-traffic-optimization.vercel.app",
+    repo: "https://github.com/SHGXNZ4344/v0-ai-traffic-optimization",
     accent: "from-primary/40 to-accent/30",
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS = [
       "Task management system supporting creation, tracking, and prioritization, backed by SQL for efficient data handling.",
     tech: ["Python", "SQL", "Frontend"],
     demo: "https://charm-blink-greet.lovable.app",
-    repo: "#",
+    repo: "https://github.com/SHGXNZ4344/charm-blink-greet",
     accent: "from-primary/30 to-accent/40",
   },
 ];
