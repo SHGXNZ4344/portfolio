@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import projectTraffic from "@/assets/project-traffic.png";
+import projectTasks from "@/assets/project-tasks.png";
 
 const PROJECTS = [
   {
@@ -11,6 +13,7 @@ const PROJECTS = [
     demo: "https://v0-ai-traffic-optimization.vercel.app",
     repo: "https://github.com/SHGXNZ4344/v0-ai-traffic-optimization",
     accent: "from-primary/40 to-accent/30",
+    image: projectTraffic,
   },
   {
     title: "Portfolio Website",
@@ -20,6 +23,7 @@ const PROJECTS = [
     demo: "https://shubham-rohilla.lovable.app/#top",
     repo: "#",
     accent: "from-accent/40 to-primary/30",
+    image: null as string | null,
   },
   {
     title: "Task Tracker Application",
@@ -29,6 +33,7 @@ const PROJECTS = [
     demo: "https://charm-blink-greet.lovable.app",
     repo: "https://github.com/SHGXNZ4344/charm-blink-greet",
     accent: "from-primary/30 to-accent/40",
+    image: projectTasks,
   },
 ];
 
@@ -52,9 +57,18 @@ export function Projects() {
               <div
                 className={`relative mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-gradient-to-br ${p.accent} ring-1 ring-white/10`}
               >
-                <div className="absolute inset-0 grid place-items-center text-xs uppercase tracking-widest text-white/60">
-                  Preview
-                </div>
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={`${p.title} preview`}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="absolute inset-0 grid place-items-center text-xs uppercase tracking-widest text-white/60">
+                    Preview
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-0" />
               </div>
 
