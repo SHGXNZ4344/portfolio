@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const EMAIL = "rohillashubhamanil@gmail.com";
 const PHONE = "+91-8397849864";
 const SOCIALS = [
-  { label: "GitHub", href: "https://github.com/", Icon: Github },
-  { label: "LinkedIn", href: "#", Icon: Linkedin },
+  { label: "GitHub", href: "https://github.com/SHGXNZ4344", Icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shubham-rohilla-vibecode", Icon: Linkedin },
 ];
 
 export function Contact() {
