@@ -3,6 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectTraffic from "@/assets/project-traffic.png";
 import projectTasks from "@/assets/project-tasks.png";
+import projectPortfolio from "@/assets/project-portfolio.png";
 
 const PROJECTS = [
   {
@@ -23,7 +24,7 @@ const PROJECTS = [
     demo: "https://shubham-rohilla.lovable.app/#top",
     repo: "#",
     accent: "from-accent/40 to-primary/30",
-    image: null as string | null,
+    image: projectPortfolio,
   },
   {
     title: "Task Tracker Application",
