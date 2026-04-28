@@ -1,8 +1,23 @@
+import { useEffect } from "react";
 import { createRouter, useRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   const router = useRouter();
+  const isModuleLoadError = /Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i.test(
+    error.message,
+  );
+
+  useEffect(() => {
+    if (!isModuleLoadError || typeof window === "undefined") return;
+
+    const reloadKey = "portfolio-module-reload-attempted";
+
+    if (!window.sessionStorage.getItem(reloadKey)) {
+      window.sessionStorage.setItem(reloadKey, "true");
+      window.location.reload();
+    }
+  }, [isModuleLoadError]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -35,6 +50,12 @@ function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => vo
         <div className="mt-6 flex items-center justify-center gap-3">
           <button
             onClick={() => {
+              if (isModuleLoadError) {
+                window.sessionStorage.removeItem("portfolio-module-reload-attempted");
+                window.location.reload();
+                return;
+              }
+
               router.invalidate();
               reset();
             }}
